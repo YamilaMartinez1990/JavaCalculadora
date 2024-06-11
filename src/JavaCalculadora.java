@@ -132,6 +132,11 @@ public class JavaCalculadora extends javax.swing.JFrame {
         });
 
         btnBorrar.setText("C");
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
 
         btnResta.setText("-");
         btnResta.addActionListener(new java.awt.event.ActionListener() {
@@ -338,6 +343,15 @@ public class JavaCalculadora extends javax.swing.JFrame {
         
         txtResultado.setText(String.valueOf(potencia));
     }//GEN-LAST:event_btnPotencia2ActionPerformed
+
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
+        // TODO add your handling code here:
+        double num1 = Double.parseDouble(txtNumero1.getText());
+        double num2 = Double.parseDouble(txtNumero2.getText());
+        txtNumero1.setText("");
+        txtNumero2.setText("");
+        txtResultado.setText("");
+    }//GEN-LAST:event_btnBorrarActionPerformed
 
     /**
      * @param args the command line arguments
