@@ -77,6 +77,12 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JTextField" name="txtResultado">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtResultadoActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -181,34 +187,45 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnSuma" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                      <Component id="btnDiv" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnSuma" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="btnDiv" min="-2" pref="80" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnResta" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="btnMulti" min="-2" pref="80" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnBorrar" min="-2" pref="278" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnMulti" min="-2" pref="80" max="-2" attributes="0"/>
-                      <Component id="btnResta" min="-2" pref="80" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnFactorial" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="btnRaiz2" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnRaiz3" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="btnModulo" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="btnModulo" min="-2" pref="71" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnFactorial" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="btnPorcentaje" max="32767" attributes="0"/>
+                              <Component id="btnRaiz2" pref="71" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnRaiz3" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                              <Component id="btnPotencia2" alignment="1" min="-2" pref="71" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                  <Component id="btnBorrar" min="-2" pref="278" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                  <Component id="btnPotencia2" min="-2" pref="72" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -234,24 +251,27 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnDiv" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnDiv" alignment="0" min="-2" pref="51" max="-2" attributes="0"/>
                           <Component id="btnMulti" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                          <Component id="btnModulo" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
-                          <Component id="btnFactorial" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="btnPotencia2" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                          <Component id="btnPorcentaje" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="btnBorrar" min="-2" pref="51" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnModulo" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
+                              <Component id="btnFactorial" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnPotencia2" min="-2" pref="51" max="-2" attributes="0"/>
-                          <EmptySpace pref="29" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace pref="47" max="32767" attributes="0"/>
+                          <Component id="btnBorrar" min="-2" pref="51" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -325,7 +345,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnModulo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="%"/>
+            <Property name="text" type="java.lang.String" value="Mod"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnModuloActionPerformed"/>
@@ -337,6 +357,14 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPotencia2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnPorcentaje">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="%"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPorcentajeActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
